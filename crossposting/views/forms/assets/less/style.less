@@ -1,0 +1,163 @@
+/* 
+    Created on : 17.09.2019, 11:42:24
+    Author     : ssiunov
+*/
+
+.export-settings-form{
+
+    @colorBlue: #004284;
+    @colorBrown: #900;
+    @colorWhite: #fff;
+
+    .columned-checkboxlist {
+        column-count: 3;
+
+        div.checkbox {
+            display: list-item;
+            list-style: none;
+            padding-bottom: 8px;
+            sup {
+                color: @colorBlue;
+            }
+        }
+    }
+
+    #exportsettings-exportitemslimit {
+        width: 100px;
+        text-align: center;
+        color: @colorBrown;
+        background-color: @colorWhite;
+    }
+
+    .choosed-items {
+        line-height: 2;
+        color: @colorBlue;
+    }
+
+    .error-message {
+        border: 0px solid @colorBrown;
+        border-radius: 6px;
+        text-align: center;
+        color: @colorWhite;
+        overflow-y: hidden;
+        font-weight: bold;
+        margin-bottom: 10px;
+        transition: all .2s ease-in-out 0s;
+        height: 0;
+        background-color: inherit;
+        line-height: 2;
+        font-size: 1.4em;
+    }
+
+    &.overloaded {
+        #exportsettings-exportitemslimit {
+            background-color: @colorBrown;
+            color: @colorWhite;
+        }
+        .choosed-items {
+            color: @colorBrown;
+        }
+        .error-message {
+            height: 40px;
+            border: 1px solid @colorBrown;
+            background-color: #f88e8e;
+        }
+    }
+}
+
+[data-ancestor="mfTextInput"] {
+    position: relative;
+    z-index: 1;
+}
+
+.grid-view {
+    .popuped {
+        .glyphicon {
+            color: #900;
+        }
+    }
+    .dragging {
+        cursor: move;
+    }
+}
+
+table.table-bordered {
+    tbody, thead{
+        tr {
+            &.over {
+                td, th {
+                    border-bottom: 1px solid #ff6600!important;
+                }
+                * {
+                    cursor: grab;
+                }
+            }
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.popup-wrap {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(120, 120, 120, .5);
+    & > div {
+        padding: 6px;
+    }
+    .popup-header {
+        white-space: nowrap;
+    }
+
+    &.view-company,
+    &.view-settings,
+    &.view-links {
+        z-index: 10000;
+        .popup-body {
+            min-width: 40vw;
+        }
+    }
+    &.view-links {
+        .form-group {
+            label {
+                line-height: 2.5;
+            }
+            input {
+                padding-right: 70px;                
+            }
+            .btn-row {
+                right: 10px;
+            }
+        }
+    }
+    &.view-history {
+        background-color: #ffe;
+        padding: 10px;
+        z-index: 10000;
+        .popup-body {
+            overflow-y: auto;
+            width: 50vw;
+            height: 30vh;
+        }
+        .flag-value {
+            padding: 0!important;
+            vertical-align: middle!important;
+            text-align: center;
+        }
+    }    
+
+    &.view-begin-time {
+        width: 300px;
+    }
+
+}
+
+.grid-view tr.shedule-export td {
+    background-color: #ff9f7f;
+    color: #222;
+}
+.grid-view tr.shedule-export:hover td {
+    background-color: #ff7547;
+}

@@ -1,0 +1,22 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "amd",
+        "target": "es5",
+        "lib": ["es2016", "dom"],
+        "removeComments": true,
+        "noImplicitAny": false,
+        "declaration": true,
+        "outFile": "../dist/index.js"
+    },
+    "files": [
+        "../../../../../../../../../DefinitelyTyped/types/jquery/index.d.ts",
+        "../../../../../../../../common/components/ts/mfWebComponents/@types/common.d.ts",
+        "../../../../../../../../common/components/ts/mfWebComponents/dist/js/common.d.ts",
+        "../../../../../../../../common/components/ts/ced/assets/ced.common.d.ts",
+        "../../../../../../../../common/components/ts/mfWebComponents/dist/js/mfBaseElement.d.ts",
+        "../../../../../../../../common/components/ts/mfWebComponents/dist/js/mfPopup.d.ts",
+        "../../../../../../../../common/components/ts/mfWebComponents/dist/js/mfComponentAddon.d.ts",
+        "index.ts"
+    ]
+}

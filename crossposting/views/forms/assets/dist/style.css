@@ -1,0 +1,131 @@
+/* 
+    Created on : 17.09.2019, 11:42:24
+    Author     : ssiunov
+*/
+.export-settings-form .columned-checkboxlist {
+  column-count: 3;
+}
+.export-settings-form .columned-checkboxlist div.checkbox {
+  display: list-item;
+  list-style: none;
+  padding-bottom: 8px;
+}
+.export-settings-form .columned-checkboxlist div.checkbox sup {
+  color: #004284;
+}
+.export-settings-form #exportsettings-exportitemslimit {
+  width: 100px;
+  text-align: center;
+  color: #900;
+  background-color: #fff;
+}
+.export-settings-form .choosed-items {
+  line-height: 2;
+  color: #004284;
+}
+.export-settings-form .error-message {
+  border: 0px solid #900;
+  border-radius: 6px;
+  text-align: center;
+  color: #fff;
+  overflow-y: hidden;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out 0s;
+  height: 0;
+  background-color: inherit;
+  line-height: 2;
+  font-size: 1.4em;
+}
+.export-settings-form.overloaded #exportsettings-exportitemslimit {
+  background-color: #900;
+  color: #fff;
+}
+.export-settings-form.overloaded .choosed-items {
+  color: #900;
+}
+.export-settings-form.overloaded .error-message {
+  height: 40px;
+  border: 1px solid #900;
+  background-color: #f88e8e;
+}
+[data-ancestor="mfTextInput"] {
+  position: relative;
+  z-index: 1;
+}
+.grid-view .popuped .glyphicon {
+  color: #900;
+}
+.grid-view .dragging {
+  cursor: move;
+}
+table.table-bordered tbody tr.over td,
+table.table-bordered thead tr.over td,
+table.table-bordered tbody tr.over th,
+table.table-bordered thead tr.over th {
+  border-bottom: 1px solid #ff6600 !important;
+}
+table.table-bordered tbody tr.over *,
+table.table-bordered thead tr.over * {
+  cursor: grab;
+}
+table.table-bordered tbody ul,
+table.table-bordered thead ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.popup-wrap {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(120, 120, 120, 0.5);
+}
+.popup-wrap > div {
+  padding: 6px;
+}
+.popup-wrap .popup-header {
+  white-space: nowrap;
+}
+.popup-wrap.view-company,
+.popup-wrap.view-settings,
+.popup-wrap.view-links {
+  z-index: 10000;
+}
+.popup-wrap.view-company .popup-body,
+.popup-wrap.view-settings .popup-body,
+.popup-wrap.view-links .popup-body {
+  min-width: 40vw;
+}
+.popup-wrap.view-links .form-group label {
+  line-height: 2.5;
+}
+.popup-wrap.view-links .form-group input {
+  padding-right: 70px;
+}
+.popup-wrap.view-links .form-group .btn-row {
+  right: 10px;
+}
+.popup-wrap.view-history {
+  background-color: #ffe;
+  padding: 10px;
+  z-index: 10000;
+}
+.popup-wrap.view-history .popup-body {
+  overflow-y: auto;
+  width: 50vw;
+  height: 30vh;
+}
+.popup-wrap.view-history .flag-value {
+  padding: 0!important;
+  vertical-align: middle!important;
+  text-align: center;
+}
+.popup-wrap.view-begin-time {
+  width: 300px;
+}
+.grid-view tr.shedule-export td {
+  background-color: #ff9f7f;
+  color: #222;
+}
+.grid-view tr.shedule-export:hover td {
+  background-color: #ff7547;
+}

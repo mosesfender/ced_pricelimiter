@@ -1,0 +1,87 @@
+/* 
+    Created on : 15.11.2019, 11:28:19
+    Author     : ssiunov
+*/
+.pricelimiter-index .panel-heading {
+  padding-bottom: 0;
+}
+.pricelimiter-index.cloned {
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  margin-right: 10px;
+  border-radius: 0;
+  border-bottom: 0;
+  display: none;
+}
+.pricelimiter-index.cloned .panel-body {
+  padding-bottom: 0;
+}
+.pricelimiter-index.cloned .panel-body table {
+  margin-bottom: 0;
+}
+.grid-view[data-ancestor="LimiterGridView"] table {
+  table-layout: fixed;
+}
+.grid-view[data-ancestor="LimiterGridView"] tbody tr td {
+  height: auto;
+  transition: all 0.2s ease-in-out 0s;
+  text-align: right;
+}
+.grid-view[data-ancestor="LimiterGridView"] tbody tr td.sel {
+  background-color: #ffe;
+}
+.grid-view[data-ancestor="LimiterGridView"] tbody tr td.edited {
+  background-color: #ffcc00;
+}
+.grid-view[data-ancestor="LimiterGridView"] tbody tr td.save {
+  background-color: #ff9999;
+}
+.grid-view[data-ancestor="LimiterGridView"] tbody tr td.saved {
+  background-color: #33cc00;
+}
+.grid-view[data-ancestor="LimiterGridView"] tbody tr td:first-child {
+  text-align: left;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.grid-view[data-ancestor="LimiterGridView"] tbody tr td:first-child a {
+  display: inline-block;
+  float: left;
+  margin-right: 4px;
+}
+.grid-view[data-ancestor="LimiterGridView"] thead tr:first-child th div {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.grid-view[data-ancestor="LimiterGridView"] thead tr:first-child th div span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.grid-view[data-ancestor="LimiterGridView"] thead tr:first-child th:first-child {
+  padding: 0;
+  font-size: 0;
+}
+.grid-view[data-ancestor="LimiterGridView"] thead tr:first-child th:first-child textarea {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  resize: none;
+}
+[data-ancestor="mfAsidePanel"] {
+  max-width: none!important;
+}
+[data-ancestor="mfAsidePanel"].help {
+  top: 150px;
+  width: 45vw;
+  z-index: 200000;
+}
+[data-ancestor="mfAsidePanel"].notes {
+  top: 220px;
+  width: 35vw;
+}
